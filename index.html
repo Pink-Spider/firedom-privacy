@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>파이어덤 개인정보 처리방침</title>
+<style>
+  :root {
+    --paper: #FBFAF8; --ink: #22201C; --soft: #6B655C;
+    --line: #E5E1DA; --accent: #C74E19;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --paper: #191713; --ink: #EDE8E0; --soft: #A39B8E;
+      --line: #35312A; --accent: #E87B45; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--paper); color: var(--ink);
+    font-family: "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+    font-size: 16px; line-height: 1.75;
+  }
+  .wrap { max-width: 680px; margin: 0 auto; padding: 56px 24px 80px; }
+  h1 { font-size: 28px; line-height: 1.35; margin: 0 0 4px; }
+  .meta { color: var(--soft); font-size: 14px; margin-bottom: 36px; }
+  h2 { font-size: 19px; margin: 36px 0 8px; padding-top: 20px; border-top: 1px solid var(--line); }
+  p, li { margin: 0 0 12px; }
+  ul { padding-left: 22px; margin: 0 0 12px; }
+  strong.hard { color: var(--accent); }
+  .box {
+    border: 1px solid var(--line); border-left: 4px solid var(--accent);
+    padding: 14px 18px; margin: 20px 0; background: rgba(199, 78, 25, 0.04);
+  }
+  table { border-collapse: collapse; width: 100%; font-size: 14.5px; margin: 12px 0; }
+  th, td { border: 1px solid var(--line); padding: 8px 12px; text-align: left; vertical-align: top; }
+  th { font-weight: 700; }
+  .foot { margin-top: 44px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--soft); font-size: 14px; }
+  a { color: var(--accent); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>파이어덤(Firedom) 개인정보 처리방침</h1>
+  <div class="meta">시행일: 2026년 9월 7일 · 개발자: Pink Spider</div>
+
+  <div class="box">
+    <strong>요약</strong> — 파이어덤에 입력하는 모든 재무 데이터(자산·기록·목표·시나리오)는
+    <strong class="hard">회원가입·계좌 연동 없이 사용자의 기기에만 저장</strong>되며,
+    어떤 경우에도 당사 서버로 전송되지 않습니다. 당사는 서버를 운영하지 않습니다.
+  </div>
+
+  <h2>1. 수집·저장하는 정보</h2>
+  <p>앱이 다루는 정보는 아래가 전부이며, 모두 <strong>기기 내부 데이터베이스에만</strong> 저장됩니다.</p>
+  <ul>
+    <li>사용자가 직접 입력한 재무 정보: 자산 항목·금액, 월 소득/지출 합계, 은퇴 목표·시뮬레이션 설정</li>
+    <li>앱 설정: 테마, 알림 시각, 금액 가림, 생체인증 잠금 여부 등</li>
+  </ul>
+  <p>당사는 이름, 이메일, 전화번호, 계좌 정보 등 어떠한 개인 식별 정보도 수집하지 않으며,
+  광고 식별자나 분석(애널리틱스) SDK도 사용하지 않습니다.</p>
+
+  <h2>2. 서버 전송 없음 원칙</h2>
+  <p>재무 데이터(자산·기록)는 <strong class="hard">어떤 경우에도 외부로 전송되지 않습니다</strong>.
+  앱을 삭제하면 기기 내 데이터도 함께 삭제됩니다. 이 원칙의 유일한 예외는
+  아래 3항(구독 결제)이며, 그 경우에도 전송되는 것은 결제 관련 정보뿐입니다.</p>
+
+  <h2>3. 구독 결제 (해당 기능 이용 시)</h2>
+  <p>프리미엄 구독을 이용하는 경우 결제는 Apple App Store 또는 Google Play의
+  인앱 결제로 처리되며, 구독 상태(영수증) 검증을 위해 결제 관리 서비스인
+  RevenueCat이 사용됩니다. 이때 처리되는 정보는 다음으로 한정됩니다.</p>
+  <table>
+    <tr><th>처리 주체</th><th>처리 정보</th><th>목적</th></tr>
+    <tr><td>Apple / Google</td><td>결제 정보, 구매 영수증</td><td>인앱 결제 처리 (스토어 계정 약관 적용)</td></tr>
+    <tr><td>RevenueCat</td><td>구매 영수증, 무작위 생성 익명 ID, 기기 유형·OS 버전</td><td>구독 유효성 검증 및 구독 상태 관리</td></tr>
+  </table>
+  <p>구독을 이용하더라도 <strong class="hard">자산·기록 등 재무 데이터는 전송되지 않습니다</strong>.
+  RevenueCat의 처리에 관한 상세는
+  <a href="https://www.revenuecat.com/privacy" rel="noopener">RevenueCat 개인정보 처리방침</a>을 참고하십시오.</p>
+
+  <h2>4. 알림</h2>
+  <p>월간 기록 리마인더는 기기의 <strong>로컬 알림</strong>만 사용합니다.
+  푸시 알림 서버를 사용하지 않으며, 알림을 위해 어떤 정보도 외부로 전송되지 않습니다.</p>
+
+  <h2>5. 생체인증 (앱 잠금)</h2>
+  <p>앱 잠금에 Face ID/지문 인증을 사용할 수 있습니다. 인증은 기기 운영체제가
+  수행하며, 앱은 생체 정보 자체에 접근하거나 저장하지 않습니다.</p>
+
+  <h2>6. 백업 파일</h2>
+  <p>설정의 백업 기능은 사용자가 지정한 위치(iCloud Drive, Google Drive 등)에
+  <strong>암호화된 백업 파일(AES-256)</strong>을 내보냅니다. 백업 파일의 생성·보관·복원은
+  전적으로 사용자가 수행하며, 당사는 해당 파일에 접근할 수 없습니다.</p>
+
+  <h2>7. 버전 확인</h2>
+  <p>새 버전 안내를 위해 스토어의 공개 버전 정보만 조회하며, 이때도 개인·재무
+  데이터는 전송되지 않습니다.</p>
+
+  <h2>8. 아동의 개인정보</h2>
+  <p>본 앱은 아동을 대상으로 하지 않으며, 아동의 개인정보를 고의로 수집하지 않습니다.</p>
+
+  <h2>9. 처리방침의 변경</h2>
+  <p>본 방침이 변경되는 경우 이 페이지에 개정 내용과 시행일을 게시합니다.</p>
+
+  <h2>10. 문의</h2>
+  <p>개인정보 처리에 관한 문의는
+  <a href="https://github.com/Pink-Spider/firedom-privacy/issues" rel="noopener">GitHub 문의 페이지</a>를
+  통해 접수할 수 있습니다.</p>
+
+  <div class="foot">
+    본 앱의 시뮬레이션 결과는 정보 제공 목적이며 투자 자문이 아닙니다.<br>
+    Firedom Privacy Policy · Pink Spider · 2026-09-07
+  </div>
+</div>
+</body>
+</html>
