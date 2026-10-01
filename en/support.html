@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Firedom Support</title>
+<style>
+  :root {
+    --paper: #FBFAF8; --ink: #22201C; --soft: #6B655C;
+    --line: #E5E1DA; --accent: #C74E19;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --paper: #191713; --ink: #EDE8E0; --soft: #A39B8E;
+      --line: #35312A; --accent: #E87B45; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--paper); color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+    font-size: 16px; line-height: 1.75;
+  }
+  .wrap { max-width: 680px; margin: 0 auto; padding: 56px 24px 80px; }
+  h1 { font-size: 28px; margin: 0 0 4px; }
+  .meta { color: var(--soft); font-size: 14px; margin-bottom: 36px; }
+  h2 { font-size: 19px; margin: 32px 0 8px; padding-top: 18px; border-top: 1px solid var(--line); }
+  p, li { margin: 0 0 12px; }
+  ul { padding-left: 22px; }
+  a { color: var(--accent); }
+  .foot { margin-top: 44px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--soft); font-size: 14px; }
+</style>
+<style>
+  .langs { display: flex; gap: 10px; flex-wrap: wrap; margin: 0 0 28px; font-size: 14px; }
+  .langs a, .langs span { padding: 4px 10px; border: 1px solid var(--line); border-radius: 999px;
+    text-decoration: none; color: var(--soft); }
+  .langs span { color: var(--paper); background: var(--accent); border-color: var(--accent); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Firedom Support</h1>
+  <div class="meta">FIRE simulator · Pink Spider</div>
+  <div class="langs"><a href="../support.html">한국어</a><span>English</span><a href="../ja/support.html">日本語</a></div>
+
+  <h2>Get in touch</h2>
+  <p>For bug reports, feature suggestions or questions about using the app, please post on the
+  <a href="https://github.com/Pink-Spider/firedom-privacy/issues" rel="noopener">contact page (GitHub Issues)</a>.
+  We read every one and reply.</p>
+
+  <h2>Frequently asked questions</h2>
+  <ul>
+    <li><strong>Where is my data stored?</strong> — Entirely on your device. There is no server.
+      See the <a href="./">privacy policy</a> for details.</li>
+    <li><strong>How do I move my data to a new phone?</strong> — In Settings, export an encrypted
+      backup file, then import it on the new device.</li>
+    <li><strong>Which currency does the app use?</strong> — You choose during onboarding, and you can
+      change it later in Settings. Changing it relabels your amounts; it does not convert them, so pick
+      the currency you actually record in.</li>
+    <li><strong>How do I change the language?</strong> — The app follows your device language. You can
+      also pick Korean, English or Japanese directly in Settings.</li>
+    <li><strong>How do I cancel my subscription?</strong> — Subscriptions are managed by your store
+      account. iOS: Settings → Apple Account → Subscriptions. Android: Play Store → profile →
+      Payments and subscriptions.</li>
+    <li><strong>What happens to my data if I delete the app?</strong> — It is deleted along with the app.
+      Export a backup file first if you want to keep it.</li>
+  </ul>
+
+  <h2>Disclaimer</h2>
+  <p>Simulation results in this app are for informational purposes only and are not investment advice.</p>
+
+  <div class="foot">Firedom Support · Pink Spider · <a href="./">Privacy policy</a></div>
+</div>
+</body>
+</html>

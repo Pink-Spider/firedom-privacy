@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Firedom プライバシーポリシー</title>
+<style>
+  :root {
+    --paper: #FBFAF8; --ink: #22201C; --soft: #6B655C;
+    --line: #E5E1DA; --accent: #C74E19;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --paper: #191713; --ink: #EDE8E0; --soft: #A39B8E;
+      --line: #35312A; --accent: #E87B45; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--paper); color: var(--ink);
+    font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Noto Sans JP", sans-serif;
+    font-size: 16px; line-height: 1.75;
+  }
+  .wrap { max-width: 680px; margin: 0 auto; padding: 56px 24px 80px; }
+  h1 { font-size: 28px; line-height: 1.35; margin: 0 0 4px; }
+  .meta { color: var(--soft); font-size: 14px; margin-bottom: 36px; }
+  h2 { font-size: 19px; margin: 36px 0 8px; padding-top: 20px; border-top: 1px solid var(--line); }
+  p, li { margin: 0 0 12px; }
+  ul { padding-left: 22px; margin: 0 0 12px; }
+  strong.hard { color: var(--accent); }
+  .box {
+    border: 1px solid var(--line); border-left: 4px solid var(--accent);
+    padding: 14px 18px; margin: 20px 0; background: rgba(199, 78, 25, 0.04);
+  }
+  table { border-collapse: collapse; width: 100%; font-size: 14.5px; margin: 12px 0; }
+  th, td { border: 1px solid var(--line); padding: 8px 12px; text-align: left; vertical-align: top; }
+  th { font-weight: 700; }
+  .foot { margin-top: 44px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--soft); font-size: 14px; }
+  a { color: var(--accent); }
+</style>
+<style>
+  .langs { display: flex; gap: 10px; flex-wrap: wrap; margin: 0 0 28px; font-size: 14px; }
+  .langs a, .langs span { padding: 4px 10px; border: 1px solid var(--line); border-radius: 999px;
+    text-decoration: none; color: var(--soft); }
+  .langs span { color: var(--paper); background: var(--accent); border-color: var(--accent); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Firedom プライバシーポリシー</h1>
+  <div class="meta">施行日: 2026年9月7日 · 開発者: Pink Spider</div>
+  <div class="langs"><a href="../?lang=ko">한국어</a><a href="../en/">English</a><span>日本語</span></div>
+
+  <div class="box">
+    <strong>要点</strong> — Firedomに入力する財務データ（資産・記録・目標・シナリオ）は
+    <strong class="hard">会員登録も口座連携もなく、お使いの端末内にのみ保存</strong>され、
+    いかなる場合も当方のサーバーへ送信されません。当方はサーバーを運用していません。
+  </div>
+
+  <h2>1. アプリが扱う情報</h2>
+  <p>アプリが扱う情報は以下がすべてで、いずれも<strong>端末内のデータベースにのみ</strong>保存されます。</p>
+  <ul>
+    <li>利用者が自ら入力した財務情報：資産項目と金額、月間の収入・支出の合計、リタイア目標、シミュレーション設定</li>
+    <li>アプリ設定：テーマ、通知時刻、金額の非表示、生体認証ロック、言語と通貨</li>
+  </ul>
+  <p>氏名・メールアドレス・電話番号・口座情報などの個人を識別する情報は一切収集せず、
+  広告識別子や解析（アナリティクス）SDKも使用しません。</p>
+
+  <h2>2. サーバーへ送信しない原則</h2>
+  <p>財務データ（資産・記録）は<strong class="hard">いかなる場合も外部へ送信されません</strong>。
+  アプリを削除すると端末内のデータも併せて削除されます。この原則の例外は
+  下記3項（サブスクリプション決済）のみで、その場合も送信されるのは決済に関する情報だけです。</p>
+
+  <h2>3. サブスクリプション決済（ご利用の場合のみ）</h2>
+  <p>プレミアムサブスクリプションをご利用の場合、決済はApple App StoreまたはGoogle Playの
+  アプリ内課金で処理され、サブスクリプションのレシート検証に決済管理サービスのRevenueCatを使用します。
+  処理される情報は次に限られます。</p>
+  <table>
+    <tr><th>処理主体</th><th>処理される情報</th><th>目的</th></tr>
+    <tr><td>Apple / Google</td><td>決済情報、購入レシート</td><td>アプリ内課金の処理（ストアアカウントの規約が適用されます）</td></tr>
+    <tr><td>RevenueCat</td><td>購入レシート、ランダムに生成された匿名ID、端末の種類とOSバージョン</td><td>サブスクリプションの有効性検証と状態管理</td></tr>
+  </table>
+  <p>サブスクリプションをご利用の場合でも、<strong class="hard">資産・記録などの財務データは送信されません</strong>。
+  RevenueCatの処理の詳細は
+  <a href="https://www.revenuecat.com/privacy" rel="noopener">RevenueCatのプライバシーポリシー</a>をご参照ください。</p>
+
+  <h2>4. 通知</h2>
+  <p>毎月の記録リマインダーは端末の<strong>ローカル通知</strong>のみを使用します。
+  プッシュ通知サーバーは使用せず、通知のために情報が外部へ送信されることはありません。</p>
+
+  <h2>5. 生体認証（アプリロック）</h2>
+  <p>アプリのロックにFace IDや指紋認証をご利用いただけます。認証は端末のオペレーティングシステムが
+  実行し、アプリが生体情報そのものにアクセスしたり保存することはありません。</p>
+
+  <h2>6. バックアップファイル</h2>
+  <p>設定のバックアップ機能は、iCloud DriveやGoogle Driveなどお指定の場所へ
+  <strong>暗号化されたバックアップファイル（AES-256）</strong>を書き出します。
+  ファイルの作成・保管・復元はすべて利用者が行い、当方は当該ファイルにアクセスできません。</p>
+
+  <h2>7. バージョン確認</h2>
+  <p>新しいバージョンのご案内のため、ストアの公開バージョン情報のみを参照します。
+  この際も個人データや財務データが送信されることはありません。</p>
+
+  <h2>8. 児童のプライバシー</h2>
+  <p>本アプリは児童を対象としておらず、児童の個人情報を故意に収集することはありません。</p>
+
+  <h2>9. 本ポリシーの変更</h2>
+  <p>本ポリシーを変更する場合は、改定内容と施行日を本ページに掲載します。</p>
+
+  <h2>10. お問い合わせ</h2>
+  <p>個人情報の取り扱いに関するお問い合わせは
+  <a href="https://github.com/Pink-Spider/firedom-privacy/issues" rel="noopener">GitHubのお問い合わせページ</a>からお願いいたします。</p>
+
+  <div class="foot">
+    本アプリのシミュレーション結果は情報提供を目的としており、投資助言ではありません。<br>
+    Firedom Privacy Policy · Pink Spider · 2026-09-07
+  </div>
+</div>
+</body>
+</html>

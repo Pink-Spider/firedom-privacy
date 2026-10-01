@@ -36,11 +36,29 @@
   .foot { margin-top: 44px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--soft); font-size: 14px; }
   a { color: var(--accent); }
 </style>
+<style>
+  .langs { display: flex; gap: 10px; flex-wrap: wrap; margin: 0 0 28px; font-size: 14px; }
+  .langs a, .langs span { padding: 4px 10px; border: 1px solid var(--line); border-radius: 999px;
+    text-decoration: none; color: var(--soft); }
+  .langs span { color: var(--paper); background: var(--accent); border-color: var(--accent); }
+</style>
+<script>
+// 기기 언어에 맞는 번역본으로 안내한다. 전환 메뉴에서 ?lang=ko로 오면 그대로 머문다.
+(function () {
+  try {
+    if (new URLSearchParams(location.search).get('lang')) return;
+    var lang = (navigator.language || '').toLowerCase();
+    if (lang.indexOf('en') === 0) location.replace('./en/');
+    else if (lang.indexOf('ja') === 0) location.replace('./ja/');
+  } catch (e) {}
+})();
+</script>
 </head>
 <body>
 <div class="wrap">
   <h1>파이어덤(Firedom) 개인정보 처리방침</h1>
   <div class="meta">시행일: 2026년 9월 7일 · 개발자: Pink Spider</div>
+  <div class="langs"><span>한국어</span><a href="./en/">English</a><a href="./ja/">日本語</a></div>
 
   <div class="box">
     <strong>요약</strong> — 파이어덤에 입력하는 모든 재무 데이터(자산·기록·목표·시나리오)는

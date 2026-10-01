@@ -28,11 +28,18 @@
   a { color: var(--accent); }
   .foot { margin-top: 44px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--soft); font-size: 14px; }
 </style>
+<style>
+  .langs { display: flex; gap: 10px; flex-wrap: wrap; margin: 0 0 28px; font-size: 14px; }
+  .langs a, .langs span { padding: 4px 10px; border: 1px solid var(--line); border-radius: 999px;
+    text-decoration: none; color: var(--soft); }
+  .langs span { color: var(--paper); background: var(--accent); border-color: var(--accent); }
+</style>
 </head>
 <body>
 <div class="wrap">
   <h1>파이어덤(Firedom) 지원</h1>
   <div class="meta">한국형 FIRE 시뮬레이터 · Pink Spider</div>
+  <div class="langs"><span>한국어</span><a href="./en/support.html">English</a><a href="./ja/support.html">日本語</a></div>
 
   <h2>문의하기</h2>
   <p>버그 신고, 기능 제안, 사용 문의는
@@ -45,6 +52,10 @@
       자세한 내용은 <a href="./">개인정보 처리방침</a>을 참고하세요.</li>
     <li><strong>기기를 바꾸면 데이터를 어떻게 옮기나요?</strong> — 설정 → 백업에서 암호화 백업 파일을
       내보낸 뒤 새 기기에서 가져오기 하세요.</li>
+    <li><strong>통화는 무엇을 쓰나요?</strong> — 처음 설정에서 고르고 나중에 설정에서 바꿀 수 있습니다.
+      바꾸면 금액이 환산되지 않고 단위 표기만 달라지니, 실제로 기록하는 통화를 고르세요.</li>
+    <li><strong>언어는 어떻게 바꾸나요?</strong> — 기기 언어를 따릅니다. 설정에서 한국어·영어·일본어를
+      직접 고를 수도 있습니다.</li>
     <li><strong>구독은 어떻게 해지하나요?</strong> — 구독은 스토어 계정에서 관리됩니다.
       iOS: 설정 → Apple 계정 → 구독 / Android: Play 스토어 → 프로필 → 결제 및 구독.</li>
     <li><strong>앱을 삭제하면 데이터는요?</strong> — 기기 내 데이터도 함께 삭제됩니다.
