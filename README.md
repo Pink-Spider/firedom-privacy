@@ -5,6 +5,11 @@
 Privacy policy and support page for **Firedom (파이어덤)** (`app.firedom.firedom`),
 served via GitHub Pages at <https://pink-spider.github.io/firedom-privacy/>.
 
+<p>
+  <a href="https://apps.apple.com/kr/app/%ED%8C%8C%EC%9D%B4%EC%96%B4%EB%8D%A4-firedom/id6790997319"><img src="app-store-badge-ko-kr-black.svg" alt="App Store에서 다운로드" height="40" align="middle"></a>
+  <a href="https://play.google.com/store/apps/details?id=app.firedom.firedom"><img src="https://play.google.com/intl/ko/badges/static/images/badges/ko_badge_web_generic.png" alt="Google Play에서 다운로드" height="60" align="middle"></a>
+</p>
+
 | Page | ko | en | ja |
 | --- | --- | --- | --- |
 | Privacy policy | `index.html` | `en/index.html` | `ja/index.html` |
